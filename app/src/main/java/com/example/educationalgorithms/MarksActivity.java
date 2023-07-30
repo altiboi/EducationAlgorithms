@@ -143,8 +143,8 @@ public class MarksActivity extends AppCompatActivity {
     }
     public void ifWannaContinue(View view) {
         calculateAPS();
-
-        if(allSelected && addMarks()){
+        addMarks();
+        if(allSelected){
             Intent intent=new Intent(this,Homepage.class);
             intent.putExtra("apsWits", apsWits);
             intent.putExtra("apsUKZN", apsUKZN);
@@ -156,9 +156,8 @@ public class MarksActivity extends AppCompatActivity {
         }
     }
 
-    public boolean addMarks()
+    public void addMarks()
     {
-        final boolean[] state = {false};
         ContentValues params = new ContentValues();
         params.put("username", username);
         params.put("hlm", hlmEditText.getText().toString());
@@ -178,13 +177,12 @@ public class MarksActivity extends AppCompatActivity {
             @Override
             public void processResponse(String response) {
                 // Handle the server response here if needed
-                if(response.trim().equalsIgnoreCase("New user record inserted successfully")){
-                    state[0] = true;
+                System.out.println(response);
+                if(!response.trim().equals("Inserted successfully") || !response.trim().equals("Updated successfully")){
+                    allSelected = false;
                 }
             }
         });
-
-        return state[0];
     }
     public static int getWits(int marks[]) {
         int aps = 0;
