@@ -10,11 +10,14 @@
     <string-array name="dropdown_item">
         <item>Physics</item>
         <item>Accounting</item>
-        <item>Tourism</item>
+        <item>Biology</item>
         <item>IT</item>
-        <item>Agriculture</item>
+        <item>CAT</item>
         <item>Consumer Studies</item>
         <item>Business Studies</item>
+        <item>Geography</item>
+        <item>Visual Arts</item>
+        <item>History</item>
     </string-array>
     <string name="spinner_hint">Select an option</string>
 </resources>

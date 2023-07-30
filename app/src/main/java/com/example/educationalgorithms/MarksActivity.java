@@ -167,6 +167,7 @@ public class MarksActivity extends AppCompatActivity {
         params.put("e1", selectedFirstElective);
         params.put("e1m", e1mEditText.getText().toString());
         params.put("e2", selectedSecondElective);
+        System.out.println(selectedSecondElective);
         params.put("e2m", e2mEditText.getText().toString());
         params.put("e3", selectedThirdElective);
         params.put("e3m", e3mEditText.getText().toString());
