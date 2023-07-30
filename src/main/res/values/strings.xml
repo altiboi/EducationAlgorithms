@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">EA</string>
+    <string name="hint1"><i>Name</i></string>
+    <string name="hint2"><i>Surname</i></string>
+    <string name="hint3"><i>Password</i></string>
+    <string-array name="dropdown_items">
+        <item>Mathematics</item>
+        <item>Mathematics Lit</item>
+    </string-array>
+    <string-array name="dropdown_item">
+        <item>Physics</item>
+        <item>Accounting</item>
+        <item>Tourism</item>
+        <item>IT</item>
+        <item>Agriculture</item>
+        <item>Consumer Studies</item>
+        <item>Business Studies</item>
+    </string-array>
+    <string-array name="dropdown">
+        <item>Computer Science</item>
+        <item>Physics</item>
+        <item>Electrical Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Law</item>
+        <item>Actuarial Science</item>
+        <item>BA General</item>
+        <item>IT</item>
+        <item>BCom General</item>
+    </string-array>
+</resources>
